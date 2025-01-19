@@ -4,11 +4,11 @@ import { TrophyOutlined, TeamOutlined, HomeOutlined, TagOutlined, ShopOutlined }
 
 const Bar = () => {
   const options = [
-    { name: "Ranking", icon: <TrophyOutlined />, path: "ranking" },
+    { name: "Ranking", icon: <TrophyOutlined />, path: "Ranking" },
     { name: "Comunidad", icon: <TeamOutlined />, path: "Anuncio" },
     { name: "Inicio", icon: <HomeOutlined />, path: "inicio" },
-    { name: "Promos", icon: <TagOutlined />, path: "promos" },
-    { name: "Almacén", icon: <ShopOutlined />, path: "almacen" },
+    { name: "Promos", icon: <TagOutlined />, path: "Promos" },
+    { name: "Almacén", icon: <ShopOutlined />, path: "StorageCategories" },
   ];
 
   return (

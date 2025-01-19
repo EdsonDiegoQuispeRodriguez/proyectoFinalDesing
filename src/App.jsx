@@ -12,12 +12,15 @@ import Almacen from "./Pages/Almacen";
 import ProductDetails from "./Pages/ProductDetails";
 import DetalleEvento from "./Pages/DetalleEvento";
 import Anuncio from "./Pages/Anuncio";
+import StorageCategories from "./Pages/StorageCategories";
+import AddItem from "./Pages/AddItem";
+import ItemList from "./Pages/ItemList";
 
 function App() {
   const location = useLocation();
 
   // Determina si mostrar el Bar y otras UI específicas
-  const shouldShowBar = ["/inicio", "/ranking", "/grupos", "/comunidades", "/promos", "/almacen", "/producto-detalle","/Anuncio"].includes(location.pathname);
+  const shouldShowBar = ["/inicio", "/ranking", "/grupos", "/comunidades", "/promos", "/almacen", "/producto-detalle","/Anuncio","/Ranking","/Promos","/category","/StorageCategories"].includes(location.pathname);
 
   return (
     <div className="relative h-[100vh]">
@@ -40,6 +43,13 @@ function App() {
         <Route path="/producto-detalle" element={<ProductDetails />} />
         <Route path="/DetalleEvento" element={<DetalleEvento />} />
         <Route path="/Anuncio" element={<Anuncio />} />
+        <Route path="/Ranking" element={<Ranking />} />
+        <Route path="/Promos" element={<Promos />} />
+        <Route path="/Almacen" element={<Almacen />} />
+        <Route path="/Promos" element={<Promos />} />
+        <Route path="/category/:category" element={<ItemList />} />
+        <Route path="/add-item/:category" element={<AddItem />} />
+        <Route path="/StorageCategories" element={<StorageCategories />} />
       </Routes>
 
       {/* Mostrar Bar solo en pantallas específicas */}

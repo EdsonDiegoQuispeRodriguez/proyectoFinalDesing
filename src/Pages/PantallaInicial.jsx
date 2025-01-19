@@ -15,7 +15,7 @@ const PantallaInicial = ({ history }) => {
       </div>
       <Link to={"/selector"}>
         <Button type="primary" size="large" onClick={handleStart}>
-            EMPEZAR
+            ¡EMPIEZA YA!
         </Button>
       </Link>
     </div>
